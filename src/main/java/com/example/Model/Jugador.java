@@ -22,6 +22,9 @@ public class Jugador {
     @Column
     private Integer canastas;
 
+    @ManyToOne
+    private Equipo equipo;
+
     @Column
     private Integer asistencias;
 
@@ -60,6 +63,14 @@ public class Jugador {
         this.canastas = canastas;
     }
 
+    public Equipo getEquipo() {
+        return equipo;
+    }
+
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
+    }
+
     public Integer getAsistencias() {
         return asistencias;
     }
@@ -75,14 +86,17 @@ public class Jugador {
     public void setPosicion(String posicion) {
         this.posicion = posicion;
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "Jugador{" +
-                "nombre='" + nombre + '\'' +
-                ", fecha nacimiento='" + fecha + '\'' +
-                ", total canastas=" + canastas +
-                ", total asistencias=" + asistencias +
-                ", posicion=" + posicion +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", fecha=" + fecha +
+                ", canastas=" + canastas +
+                ", equipo=" + equipo +
+                ", asistencias=" + asistencias +
+                ", posicion='" + posicion + '\'' +
                 '}';
     }
 }
