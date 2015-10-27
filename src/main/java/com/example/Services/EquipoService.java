@@ -33,9 +33,38 @@ public class EquipoService {
         equipo1.setNombre("FC Varril");
         equipo1.setLocalidad("Barcelona");
         equipo1.setFechacreacion(Calendar.getTime());
-        Jugador jugador=jugadorRepository.findOne(1L);
-        jugador.setEquipo(equipo1);
-        jugadorRepository.save(jugador);
+       // Jugador jugador=jugadorRepository.findOne(1L);
+       // jugador.setEquipo(equipo1);
+       // jugadorRepository.save(jugador);
         equipoRepository.save(equipo1);
+
+        Equipo equipo2 = new Equipo();
+        equipo1.setNombre("FC Meme");
+        equipo1.setLocalidad("Barcelona");
+        equipo1.setFechacreacion(Calendar.getTime());
+        //Jugador jugador2=jugadorRepository.findOne(1L);
+        //jugador.setEquipo(equipo1);
+        //jugadorRepository.save(jugador);
+        equipoRepository.save(equipo1);
+
+        Equipo equipo3 = new Equipo();
+        equipo1.setNombre("FC Sal");
+        equipo1.setLocalidad("Zaragoza");
+        equipo1.setFechacreacion(Calendar.getTime());
+        equipoRepository.save(equipo1);
+
+        Equipo equipo4 = new Equipo();
+        equipo1.setNombre("FC Tir");
+        equipo1.setLocalidad("Barcelona");
+        equipo1.setFechacreacion(Calendar.getTime());
+        equipoRepository.save(equipo1);
+
+        Equipo equipo5 = new Equipo();
+        equipo1.setNombre("FC Glimpse");
+        equipo1.setLocalidad("Barcelona");
+        equipo1.setFechacreacion(Calendar.getTime());
+        equipoRepository.save(equipo1);
+
+
     }
 }
