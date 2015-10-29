@@ -17,8 +17,8 @@ import java.util.List;
 @Service
 public class JugadorService {
 
-    @Autowired
-    private EquipoRepository equipoRepository;
+    //@Autowired
+   // private EquipoRepository equipoRepository;
 
     @Autowired
     private JugadorRepository jugadorRepository;
@@ -34,7 +34,7 @@ public class JugadorService {
         jugador1.setAsistencias(42);
         jugador1.setFecha(Calendar.getTime());
         jugador1.setPosicion("alero");
-        jugador1.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador1);
 
         Calendar.set(1997, Calendar.MAY, 15);
@@ -44,7 +44,7 @@ public class JugadorService {
         jugador2.setAsistencias(12);
         jugador2.setFecha(Calendar.getTime());
         jugador2.setPosicion("base");
-        jugador2.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador2);
 
         Calendar.set(1997, Calendar.FEBRUARY, 15);
@@ -54,7 +54,7 @@ public class JugadorService {
         jugador3.setAsistencias(28);
         jugador3.setFecha(Calendar.getTime());
         jugador3.setPosicion("pivot");
-        jugador3.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador3);
 
         Calendar.set(1997, Calendar.JULY, 15);
@@ -64,7 +64,7 @@ public class JugadorService {
         jugador4.setAsistencias(22);
         jugador4.setFecha(Calendar.getTime());
         jugador4.setPosicion("base");
-        jugador4.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador4);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -74,7 +74,7 @@ public class JugadorService {
         jugador5.setAsistencias(50);
         jugador5.setFecha(Calendar.getTime());
         jugador5.setPosicion("pivot");
-        jugador5.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador5);
 
         //5 up
@@ -86,7 +86,7 @@ public class JugadorService {
         jugador6.setAsistencias(50);
         jugador6.setFecha(Calendar.getTime());
         jugador6.setPosicion("pivot");
-        jugador6.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador6);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -96,7 +96,7 @@ public class JugadorService {
         jugador7.setAsistencias(50);
         jugador7.setFecha(Calendar.getTime());
         jugador7.setPosicion("pivot");
-        jugador7.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador7);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -106,7 +106,7 @@ public class JugadorService {
         jugador8.setAsistencias(50);
         jugador8.setFecha(Calendar.getTime());
         jugador8.setPosicion("pivot");
-        jugador8.setEquipo((Equipo) equipoRepository.findByNombre("FC Sal"));
+
         jugadorRepository.save(jugador8);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -116,7 +116,7 @@ public class JugadorService {
         jugador9.setAsistencias(50);
         jugador9.setFecha(Calendar.getTime());
         jugador9.setPosicion("pivot");
-        jugador9.setEquipo((Equipo) equipoRepository.findByNombre("FC Glimpse"));
+
         jugadorRepository.save(jugador9);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -126,7 +126,7 @@ public class JugadorService {
         jugador10.setAsistencias(50);
         jugador10.setFecha(Calendar.getTime());
         jugador10.setPosicion("pivot");
-        jugador10.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador10);
         //10 up
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -136,7 +136,7 @@ public class JugadorService {
         jugador11.setAsistencias(50);
         jugador11.setFecha(Calendar.getTime());
         jugador11.setPosicion("alero");
-        jugador11.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador11);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -146,7 +146,7 @@ public class JugadorService {
         jugador12.setAsistencias(50);
         jugador12.setFecha(Calendar.getTime());
         jugador12.setPosicion("pivot");
-        jugador12.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador12);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -156,7 +156,7 @@ public class JugadorService {
         jugador13.setAsistencias(50);
         jugador13.setFecha(Calendar.getTime());
         jugador13.setPosicion("pivot");
-        jugador13.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador13);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -166,7 +166,7 @@ public class JugadorService {
         jugador14.setAsistencias(50);
         jugador14.setFecha(Calendar.getTime());
         jugador14.setPosicion("base");
-        jugador14.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador14);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -176,7 +176,7 @@ public class JugadorService {
         jugador15.setAsistencias(50);
         jugador15.setFecha(Calendar.getTime());
         jugador15.setPosicion("base");
-        jugador15.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador15);
         //15 up
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -186,7 +186,7 @@ public class JugadorService {
         jugador16.setAsistencias(50);
         jugador16.setFecha(Calendar.getTime());
         jugador16.setPosicion("pivot");
-        jugador16.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador16);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -196,7 +196,7 @@ public class JugadorService {
         jugador17.setAsistencias(50);
         jugador17.setFecha(Calendar.getTime());
         jugador17.setPosicion("pivot");
-        jugador17.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador17);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -206,7 +206,7 @@ public class JugadorService {
         jugador18.setAsistencias(50);
         jugador18.setFecha(Calendar.getTime());
         jugador18.setPosicion("base");
-        jugador18.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador18);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -216,7 +216,7 @@ public class JugadorService {
         jugador19.setAsistencias(50);
         jugador19.setFecha(Calendar.getTime());
         jugador19.setPosicion("alero");
-        jugador19.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador19);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -226,7 +226,7 @@ public class JugadorService {
         jugador20.setAsistencias(50);
         jugador20.setFecha(Calendar.getTime());
         jugador20.setPosicion("base");
-        jugador20.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador20);
         //20 up
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -236,7 +236,7 @@ public class JugadorService {
         jugador21.setAsistencias(50);
         jugador21.setFecha(Calendar.getTime());
         jugador21.setPosicion("pivot");
-        jugador21.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador21);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -246,7 +246,7 @@ public class JugadorService {
         jugador22.setAsistencias(50);
         jugador22.setFecha(Calendar.getTime());
         jugador22.setPosicion("pivot");
-        jugador22.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador22);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -256,7 +256,7 @@ public class JugadorService {
         jugador23.setAsistencias(57);
         jugador23.setFecha(Calendar.getTime());
         jugador23.setPosicion("base");
-        jugador23.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador23);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -266,7 +266,7 @@ public class JugadorService {
         jugador24.setAsistencias(50);
         jugador24.setFecha(Calendar.getTime());
         jugador24.setPosicion("alero");
-        jugador24.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador24);
 
         Calendar.set(2005, Calendar.JUNE, 15);
@@ -276,18 +276,18 @@ public class JugadorService {
         jugador25.setAsistencias(5);
         jugador25.setFecha(Calendar.getTime());
         jugador25.setPosicion("pivot");
-        jugador24.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+
         jugadorRepository.save(jugador25);
 
         //25
 
         Calendar.set(2000, Calendar.DECEMBER,20);
-        System.out.println(jugadorRepository.findByNombreContaining("as"));
-        System.out.println(jugadorRepository.findByCanastasGreaterThanEqual(15));
-        System.out.println(jugadorRepository.findByAsistenciasBetween(20, 40));
-        System.out.println(jugadorRepository.findByPosicion("base"));
-        System.out.println(jugadorRepository.findByFechaBefore(Calendar.getTime()));
-        System.out.println(jugadorRepository.findByCanastasGreaterThanEqualAndFechaBefore(30, Calendar.getTime()));
+        //System.out.println(jugadorRepository.findByNombreContaining("as"));
+        //System.out.println(jugadorRepository.findByCanastasGreaterThanEqual(15));
+        //System.out.println(jugadorRepository.findByAsistenciasBetween(20, 40));
+        //System.out.println(jugadorRepository.findByPosicion("base"));
+        //System.out.println(jugadorRepository.findByFechaBefore(Calendar.getTime()));
+        //System.out.println(jugadorRepository.findByCanastasGreaterThanEqualAndFechaBefore(30, Calendar.getTime()));
 
 
 

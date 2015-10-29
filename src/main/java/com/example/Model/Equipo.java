@@ -19,7 +19,7 @@ public class Equipo {
     private String nombre;
 
     @OneToMany(mappedBy = "equipo")
-    private Set<Jugador> jugador = new HashSet<>();
+    private Set<Jugador> jugadors = new HashSet<>();
 
     @Column
     private String localidad;
@@ -35,12 +35,12 @@ public class Equipo {
         this.id = id;
     }
 
-    public Set<Jugador> getJugador() {
-        return jugador;
+    public Set<Jugador> getJugadors() {
+        return jugadors;
     }
 
-    public void setJugador(Set<Jugador> jugador) {
-        this.jugador = jugador;
+    public void setJugadors(Set<Jugador> jugadors) {
+        this.jugadors = jugadors;
     }
 
     public String getNombre() {
@@ -72,7 +72,7 @@ public class Equipo {
         return "Equipo{" +
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
-                ", jugador=" + jugador +
+                ", jugadors=" + jugadors +
                 ", localidad='" + localidad + '\'' +
                 ", fechacreacion=" + fechacreacion +
                 '}';
