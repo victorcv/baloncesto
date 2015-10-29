@@ -5,6 +5,8 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
+import java.util.Set;
+import java.util.HashSet;
 
 @Entity
 public class Temporada {
@@ -19,7 +21,8 @@ public class Temporada {
     private Liga liga;
 
     @ManyToMany(mappedBy = "temporadas")
-    private Set<Equipo> projects = new HashSet<>();
+    private Set<Equipo> equipos = new HashSet<>();
+
 
     public Long getId() {
         return id;
@@ -29,19 +32,37 @@ public class Temporada {
         this.id = id;
     }
 
-    public String getNombreTemporada() {
+    public String getNombre() {
         return nombre;
     }
 
-    public void setNombreTemporada(String nombreTemporada) {
-        this.nombre = nombreTemporada;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Liga getLiga() {
+        return liga;
+    }
+
+    public void setLiga(Liga liga) {
+        this.liga = liga;
+    }
+
+    public Set<Equipo> getEquipos() {
+        return equipos;
+    }
+
+    public void setEquipos(Set<Equipo> equipos) {
+        this.equipos = equipos;
     }
 
     @Override
     public String toString() {
         return "Temporada{" +
                 "id=" + id +
-                ", nombreTemporada='" + nombre + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", liga=" + liga +
+                ", equipos=" + equipos +
                 '}';
     }
 }
