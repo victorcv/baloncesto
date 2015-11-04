@@ -22,7 +22,7 @@ public class Equipo {
     private Set<Jugador> jugadors = new HashSet<>();
 
     @ManyToMany(mappedBy = "equipos")
-    private Set<Equipo>  temporadas = new HashSet<>();
+    private Set<Temporada>  temporadas = new HashSet<>();
 
     @Column
     private String localidad;
@@ -66,6 +66,14 @@ public class Equipo {
         return fechacreacion;
     }
 
+    public Set<Temporada> getTemporadas() {
+        return temporadas;
+    }
+
+    public void setTemporadas(Set<Temporada> temporadas) {
+        this.temporadas = temporadas;
+    }
+
     public void setFechacreacion(Date fechacreacion) {
         this.fechacreacion = fechacreacion;
     }
@@ -76,6 +84,7 @@ public class Equipo {
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", jugadors=" + jugadors +
+                ", temporadas=" + temporadas +
                 ", localidad='" + localidad + '\'' +
                 ", fechacreacion=" + fechacreacion +
                 '}';

@@ -20,7 +20,7 @@ public class Temporada {
     @ManyToOne
     private Liga liga;
 
-    @ManyToMany(mappedBy = "temporadas")
+    @ManyToMany
     private Set<Equipo> equipos = new HashSet<>();
 
 

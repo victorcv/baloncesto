@@ -19,7 +19,7 @@ public class Liga {
     private String nombre;
 
     @OneToMany(mappedBy = "liga")
-    private Set<Jugador> temporadas = new HashSet<>();
+    private Set<Temporada> temporadas = new HashSet<>();
 
 
     public Long getId() {
@@ -38,11 +38,11 @@ public class Liga {
         this.nombre = nombre;
     }
 
-    public Set<Jugador> getTemporadas() {
+    public Set<Temporada> getTemporadas() {
         return temporadas;
     }
 
-    public void setTemporadas(Set<Jugador> temporadas) {
+    public void setTemporadas(Set<Temporada> temporadas) {
         this.temporadas = temporadas;
     }
 
