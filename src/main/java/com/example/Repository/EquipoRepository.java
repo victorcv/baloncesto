@@ -11,4 +11,6 @@ import java.util.Date;
  */
 public interface EquipoRepository extends PagingAndSortingRepository<Equipo, Long>{
 public List<Equipo> findByNombreContaining(String algo);
-    public List<Equipo> findByNombre(String algo);}
+    public List<Equipo> findByNombre(String algo);
+    public List<Equipo> findByLocalidad(String algo);
+  }
