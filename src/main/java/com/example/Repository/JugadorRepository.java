@@ -12,7 +12,12 @@ import java.util.Date;
  */
 @Repository
 public interface JugadorRepository extends PagingAndSortingRepository<Jugador, Long>{
+//EJ 1
     public List<Jugador> findByEquipoNombre(String nam);
+    public List<Jugador> findTopByOrderByCanastasDesc();
+    public List<Jugador> findFirst5ByOrderByAsistenciasDesc();
+    public List<Jugador> findByEquipoNombreAndPosicion(String nam, String pos);
+//EJ 2
     public List<Jugador> findByNombreContaining(String algo);
     public List<Jugador> findByCanastasGreaterThanEqual(Integer Canastas);
     public List<Jugador> findByAsistenciasBetween(Integer MinAsistencias, Integer maxAsistencias );

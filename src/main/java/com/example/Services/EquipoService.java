@@ -170,5 +170,23 @@ public class EquipoService {
         jugadorRepository.save(jugador25);
 
         //jugador5.setEquipo((Equipo) equipoRepository.findByNombre("FC Varril"));
+        System.out.println("LOCALIDAD");
+        System.out.println(equipoRepository.findByLocalidad("Zaragoza"));
+        System.out.println("TOP DE CANASTAS");
+        System.out.println(jugadorRepository.findTopByOrderByCanastasDesc());
+        System.out.println("JUGADORES CON LA MISMA POSICION DEL MISMO EQUIPO");
+        System.out.println(jugadorRepository.findByEquipoNombreAndPosicion("FC Sal", "pivot"));
+        System.out.println("TOP 5 DE ASISTENCIAS");
+        System.out.println(jugadorRepository.findFirst5ByOrderByAsistenciasDesc());
+        System.out.println("JUGADORES DEL MISMO EQUIPO");
+        System.out.println(jugadorRepository.findByEquipoNombre("FC Sal"));
+        System.out.println("JUGADOR QUE MAS CANASTAS HA METIDO DEL EQUIPO");
+
+        /*
+        * findByEquipoNombre(String nam);
+    public List<Jugador> findTopByOrderByCanastasDesc();
+    public List<Jugador> findFirst5ByOrderByAsistenciasDesc();
+        *
+        * */
     }
 }
