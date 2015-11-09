@@ -288,7 +288,7 @@ public class JugadorService {
         //System.out.println(jugadorRepository.findByPosicion("base"));
         //System.out.println(jugadorRepository.findByFechaBefore(Calendar.getTime()));
         //System.out.println(jugadorRepository.findByCanastasGreaterThanEqualAndFechaBefore(30, Calendar.getTime()));
-
+//
 
 
     }
