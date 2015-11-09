@@ -122,7 +122,7 @@ public class JugadorService {
         Calendar.set(2005, Calendar.JUNE, 15);
         Jugador jugador10= new Jugador();
         jugador10.setNombre("Black6");
-        jugador10.setCanastas(20);
+        jugador10.setCanastas(29);
         jugador10.setAsistencias(50);
         jugador10.setFecha(Calendar.getTime());
         jugador10.setPosicion("pivot");
@@ -132,8 +132,8 @@ public class JugadorService {
         Calendar.set(2005, Calendar.JUNE, 15);
         Jugador jugador11= new Jugador();
         jugador11.setNombre("Black7");
-        jugador11.setCanastas(20);
-        jugador11.setAsistencias(50);
+        jugador11.setCanastas(21);
+        jugador11.setAsistencias(74);
         jugador11.setFecha(Calendar.getTime());
         jugador11.setPosicion("alero");
 
@@ -142,8 +142,8 @@ public class JugadorService {
         Calendar.set(2005, Calendar.JUNE, 15);
         Jugador jugador12= new Jugador();
         jugador12.setNombre("Black8");
-        jugador12.setCanastas(20);
-        jugador12.setAsistencias(50);
+        jugador12.setCanastas(22);
+        jugador12.setAsistencias(80);
         jugador12.setFecha(Calendar.getTime());
         jugador12.setPosicion("pivot");
 
@@ -152,8 +152,8 @@ public class JugadorService {
         Calendar.set(2005, Calendar.JUNE, 15);
         Jugador jugador13= new Jugador();
         jugador13.setNombre("Black9");
-        jugador13.setCanastas(20);
-        jugador13.setAsistencias(50);
+        jugador13.setCanastas(23);
+        jugador13.setAsistencias(59);
         jugador13.setFecha(Calendar.getTime());
         jugador13.setPosicion("pivot");
 
@@ -162,8 +162,8 @@ public class JugadorService {
         Calendar.set(2005, Calendar.JUNE, 15);
         Jugador jugador14= new Jugador();
         jugador14.setNombre("Black10");
-        jugador14.setCanastas(20);
-        jugador14.setAsistencias(50);
+        jugador14.setCanastas(70);
+        jugador14.setAsistencias(67);
         jugador14.setFecha(Calendar.getTime());
         jugador14.setPosicion("base");
 
@@ -172,8 +172,8 @@ public class JugadorService {
         Calendar.set(2005, Calendar.JUNE, 15);
         Jugador jugador15= new Jugador();
         jugador15.setNombre("Black11");
-        jugador15.setCanastas(20);
-        jugador15.setAsistencias(50);
+        jugador15.setCanastas(2);
+        jugador15.setAsistencias(66);
         jugador15.setFecha(Calendar.getTime());
         jugador15.setPosicion("base");
 
@@ -273,7 +273,7 @@ public class JugadorService {
         Jugador jugador25= new Jugador();
         jugador25.setNombre("Black21");
         jugador25.setCanastas(23);
-        jugador25.setAsistencias(5);
+        jugador25.setAsistencias(90);
         jugador25.setFecha(Calendar.getTime());
         jugador25.setPosicion("pivot");
 

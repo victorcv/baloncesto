@@ -181,6 +181,7 @@ public class EquipoService {
         System.out.println("JUGADORES DEL MISMO EQUIPO");
         System.out.println(jugadorRepository.findByEquipoNombre("FC Sal"));
         System.out.println("JUGADOR QUE MAS CANASTAS HA METIDO DEL EQUIPO");
+        System.out.println(jugadorRepository.findTopByOrderByCanastasDescFromEquipo("FC Sal"));
 
         /*
         * findByEquipoNombre(String nam);

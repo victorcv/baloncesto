@@ -6,7 +6,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Date;
-
+import org.springframework.data.repository.query.Param;
+import org.springframework.data.jpa.repository.Query;
 /**
  * Created by jhipster on 8/10/15.
  */
@@ -17,7 +18,12 @@ public interface JugadorRepository extends PagingAndSortingRepository<Jugador, L
     public List<Jugador> findTopByOrderByCanastasDesc();
     public List<Jugador> findFirst5ByOrderByAsistenciasDesc();
     public List<Jugador> findByEquipoNombreAndPosicion(String nam, String pos);
-//EJ 2
+
+    //Devuelve el jugador que más canastas ha realizado de un equipo determinado como parámetro.
+    @Query("SELECT j FROM Jugador j where j.equipo.nombre = :equipoNombre ")
+    List<Jugador> findTopByOrderByCanastasDescFromEquipo(@Param("equipoNombre") String equipoNombre);
+
+    //EJ 2
     public List<Jugador> findByNombreContaining(String algo);
     public List<Jugador> findByCanastasGreaterThanEqual(Integer Canastas);
     public List<Jugador> findByAsistenciasBetween(Integer MinAsistencias, Integer maxAsistencias );
