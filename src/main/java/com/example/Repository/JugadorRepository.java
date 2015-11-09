@@ -20,8 +20,8 @@ public interface JugadorRepository extends PagingAndSortingRepository<Jugador, L
     public List<Jugador> findByEquipoNombreAndPosicion(String nam, String pos);
 
     //Devuelve el jugador que más canastas ha realizado de un equipo determinado como parámetro.
-    @Query("SELECT j FROM Jugador j where j.equipo.nombre = :equipoNombre ")
-    List<Jugador> findTopByOrderByCanastasDescFromEquipo(@Param("equipoNombre") String equipoNombre);
+    @Query("SELECT j FROM Jugador j where j.equipo.nombre = :equipoNombre order by j.canastas desc")
+    List<Jugador> findFromEquipoByCanastas(@Param("equipoNombre") String equipoNombre);
 
     //EJ 2
     public List<Jugador> findByNombreContaining(String algo);
