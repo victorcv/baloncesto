@@ -1,5 +1,7 @@
 package com.example.Controller;
 
+import com.example.Repository.JugadorRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,5 +13,5 @@ import org.springframework.web.bind.annotation.RestController;
 public class JugadorController {
 
     @Autowired
-    private DeveloperRepository developerRepository;
+    private JugadorRepository jugadorRepository;
 }
