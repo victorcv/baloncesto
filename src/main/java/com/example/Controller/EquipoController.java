@@ -13,6 +13,8 @@ import java.util.List;
 /**
  * Created by jhipster on 10/11/15.
  */
+
+/*TEST*/
 @RestController //SIRVE PARA SABER QUE ES UN CONTROLADOR
 @RequestMapping("/equipos") //el equipos es el path de la url en este caso
 public class EquipoController {
